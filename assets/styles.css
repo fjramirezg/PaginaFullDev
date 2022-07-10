@@ -1,0 +1,152 @@
+/** importacion de la fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+/* :root {
+  --colorPrincipal-: #242635;
+  --colorSecundario-: #c2bfbc;
+  --colorAlterno1-: #34b0be;
+  --colorAlterno2-: #ffffff;
+  --colorFondo-: rgb(59, 58, 58);
+} */
+
+/* ajustes generales-hoja de trabajo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--colorPrincipal-);
+}
+
+/*ajuste encabezado*/
+header {
+  background-color: var(--colorPrincipal-);
+  position: relative;
+  /* margin-bottom: 100px; */
+}
+
+/*ajuste barra de navegacion*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1.25rem;
+  height: 60px;
+  margin-bottom: 1.5rem;
+  font-size: 25px;
+  gap: 1.5rem;
+}
+
+ul > a {
+  text-decoration: none;
+}
+
+/*ajuste  imagen barra de navegacion*/
+nav > label > img {
+  width: 45px;
+  background-color: var(--colorFondo-);
+  border-radius: 5px;
+}
+
+/*ajuste visibilidad menu hamburguesa*/
+input#menu-hamburguesa {
+  visibility: hidden;
+}
+
+/*ajuste items barra de navegacion*/
+input#menu-hamburguesa ~ ul {
+  background-color: var(--colorAlterno1-);
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  top: 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  display: none;
+  z-index: 100;
+}
+
+/*ajuste boton seleccion menu hamburguesa*/
+input#menu-hamburguesa:checked ~ ul {
+  display: flex;
+}
+
+.prueba:visited {
+  color: white;
+}
+
+@media (min-width: 980px) {
+  .nombre > h2 {
+    font-size: 43px;
+  }
+
+  .marketing {
+    font-size: 33px;
+    color: var(--colorAlterno2-);
+  }
+
+  .años-exp {
+    font-size: 38px;
+    position: absolute;
+    right: 84px;
+    top: 49px;
+    z-index: 2;
+  }
+
+  .linkedin,
+  .instagram,
+  .twitter {
+    height: 40%;
+    width: 26%;
+    gap: 0.4rem;
+    background-color: #d1ceca;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+
+  .imagen-perfil > img {
+    height: 420px;
+    width: 420px;
+    border-radius: 50%;
+    padding: 1.5rem;
+    background-color: var(--colorFondo-);
+    object-fit: contain;
+    position: relative;
+    left: calc(50% - 210px);
+    z-index: 0;
+  }
+
+  .about-me > p {
+    padding: 1rem 1.5rem;
+    text-align: justify;
+    color: var(--colorSecundario-);
+    font-size: 25px;
+  }
+
+  nav label {
+    display: none;
+  }
+
+  input#menu-hamburguesa ~ ul {
+    position: static;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-end;
+  }
+
+  nav {
+    font-size: 19px;
+  }
+}
