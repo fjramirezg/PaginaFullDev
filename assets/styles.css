@@ -1,9 +1,10 @@
 /** importacion de la fuente*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 :root {
   --colorAzulPrincipal-: #00aeef;
   --colorGrisPrincipal-: #b4c5d8;
+  --colorLetraPrincipal-: #0d0d0d;
 }
 
 /* ajustes generales-hoja de trabajo*/
@@ -37,6 +38,8 @@ nav {
   margin-bottom: 1.5rem;
   font-size: 25px;
   gap: 1.5rem;
+  font-size: 19px;
+  height: 8rem;
 }
 
 ul > a {
@@ -81,6 +84,20 @@ input#menu-hamburguesa:checked ~ ul {
   color: white;
 }
 
+.btn_budget {
+  border-radius: 50px;
+  background-color: white;
+  padding: 1rem;
+  list-style: none;
+  color: var(--colorLetraPrincipal-);
+  font-weight: 100;
+}
+
+.btn_budget:hover {
+  background-color: #b4c5d8;
+  transition-duration: 300ms;
+}
+
 @media (min-width: 980px) {
   nav label {
     display: none;
@@ -97,6 +114,6 @@ input#menu-hamburguesa:checked ~ ul {
 
   nav {
     font-size: 19px;
-    height: 80px;
+    height: 8rem;
   }
 }
