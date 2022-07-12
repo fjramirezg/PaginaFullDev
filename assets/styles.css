@@ -1,4 +1,3 @@
-/** importacion de la fuente*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 :root {
@@ -22,24 +21,38 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/*ajuste encabezado*/
 header {
   background-color: var(--colorAzulPrincipal-);
   position: relative;
-  /* margin-bottom: 100px; */
 }
 
 /*ajuste barra de navegacion*/
 nav {
+  font-size: 18px;
+  height: 8rem;
   display: flex;
   justify-content: flex-end;
-  padding: 0.5rem 1.25rem;
-  height: 60px;
-  margin-bottom: 1.5rem;
-  font-size: 25px;
-  gap: 1.5rem;
-  font-size: 19px;
-  height: 8rem;
+  align-items: center;
+}
+.containerNav {
+  width: 100%;
+}
+
+
+
+input#menu-hamburguesa ~ ul {
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  top: 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  display: none;
+  z-index: 100;
 }
 
 ul > a {
@@ -56,23 +69,6 @@ nav > label > img {
 /*ajuste visibilidad menu hamburguesa*/
 input#menu-hamburguesa {
   visibility: hidden;
-}
-
-/*ajuste items barra de navegacion*/
-input#menu-hamburguesa ~ ul {
-  background-color: var(--colorAlterno1-);
-  list-style: none;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  height: 100%;
-  top: 60px;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem 1rem;
-  display: none;
-  z-index: 100;
 }
 
 /*ajuste boton seleccion menu hamburguesa*/
@@ -96,6 +92,8 @@ input#menu-hamburguesa:checked ~ ul {
 .btn_budget:hover {
   background-color: #b4c5d8;
   transition-duration: 300ms;
+  color: white;
+  font-size: 25px;
 }
 
 @media (min-width: 980px) {
@@ -112,8 +110,8 @@ input#menu-hamburguesa:checked ~ ul {
     justify-content: flex-end;
   }
 
-  nav {
+  /* nav {
     font-size: 19px;
     height: 8rem;
-  }
+  } */
 }
