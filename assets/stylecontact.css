@@ -33,18 +33,23 @@ header {
 /** contact section **/
 
 .contact {
-    background: var(--colorGrisPrincipal--);
-    margin-top: 90px;
-    padding: 20rem;
-    background-color: #b4c5d8;
+    background: var(--colorGrisPrincipal-);
+    margin-top: -50px;
+    padding: 25rem;
+    background-color: var(--colorGrisPrincipal-);
   }
   
-  .contact .titlepage h2 {
-    color: #fff;
+.titlepage {
+    color: var(--colorAzulPrincipal-);
     justify-content: center;
-  }
+    padding-bottom: 90px;
+    padding-top: 10px;
+    display:flex;
+}
   
-  .main_form .contactus {
+
+  
+  .contactus {
     border: inherit;
     margin-bottom: 20px;
     width: 100%;
@@ -53,10 +58,10 @@ header {
     color: #f9fcfd;
     font-size: 18px;
     font-weight: normal;
-    border-bottom: #fff solid 1px;
+    border-bottom: #00aeef solid 1px;
   }
   
-  .main_form .send_btn {
+  .send_btn {
     font-size: 17px;
     transition: ease-in all 0.5s;
     background-color: transparent;
@@ -73,7 +78,7 @@ header {
     margin-top: 30px;
   }
   
-  .main_form .send_btn:hover {
+ .send_btn:hover {
     background-color: #00aeef;
     transition: ease-in all 0.5s;
     color: #fff;
