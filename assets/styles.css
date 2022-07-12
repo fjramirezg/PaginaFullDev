@@ -96,6 +96,7 @@ input#menu-hamburguesa:checked ~ ul {
 .btn_budget:hover {
   background-color: #b4c5d8;
   transition-duration: 300ms;
+  color:white;
 }
 
 @media (min-width: 980px) {
