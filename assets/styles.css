@@ -1,13 +1,10 @@
 /** importacion de la fuente*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
-/* :root {
-  --colorPrincipal-: #242635;
-  --colorSecundario-: #c2bfbc;
-  --colorAlterno1-: #34b0be;
-  --colorAlterno2-: #ffffff;
-  --colorFondo-: rgb(59, 58, 58);
-} */
+:root {
+  --colorAzulPrincipal-: #00aeef;
+  --colorGrisPrincipal-: #b4c5d8;
+}
 
 /* ajustes generales-hoja de trabajo*/
 * {
@@ -22,12 +19,11 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--colorPrincipal-);
 }
 
 /*ajuste encabezado*/
 header {
-  background-color: var(--colorPrincipal-);
+  background-color: var(--colorAzulPrincipal-);
   position: relative;
   /* margin-bottom: 100px; */
 }
@@ -86,53 +82,6 @@ input#menu-hamburguesa:checked ~ ul {
 }
 
 @media (min-width: 980px) {
-  .nombre > h2 {
-    font-size: 43px;
-  }
-
-  .marketing {
-    font-size: 33px;
-    color: var(--colorAlterno2-);
-  }
-
-  .años-exp {
-    font-size: 38px;
-    position: absolute;
-    right: 84px;
-    top: 49px;
-    z-index: 2;
-  }
-
-  .linkedin,
-  .instagram,
-  .twitter {
-    height: 40%;
-    width: 26%;
-    gap: 0.4rem;
-    background-color: #d1ceca;
-    border-radius: 50%;
-    padding: 0.5rem;
-  }
-
-  .imagen-perfil > img {
-    height: 420px;
-    width: 420px;
-    border-radius: 50%;
-    padding: 1.5rem;
-    background-color: var(--colorFondo-);
-    object-fit: contain;
-    position: relative;
-    left: calc(50% - 210px);
-    z-index: 0;
-  }
-
-  .about-me > p {
-    padding: 1rem 1.5rem;
-    text-align: justify;
-    color: var(--colorSecundario-);
-    font-size: 25px;
-  }
-
   nav label {
     display: none;
   }
@@ -148,5 +97,6 @@ input#menu-hamburguesa:checked ~ ul {
 
   nav {
     font-size: 19px;
+    height: 80px;
   }
 }
