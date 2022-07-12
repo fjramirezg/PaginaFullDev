@@ -1,0 +1,95 @@
+/** importacion de la fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+:root {
+  --colorAzulPrincipal-: #00aeef;
+  --colorGrisPrincipal-: #b4c5d8;
+  --colorLetraPrincipal-: #0d0d0d;
+}
+
+/* ajustes generales-hoja de trabajo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*ajuste encabezado*/
+header {
+  background-color: var(--colorAzulPrincipal-);
+  position: relative;
+  /* margin-bottom: 100px; */
+}
+
+
+/** contact section **/
+
+.contact {
+    background: var(--colorGrisPrincipal-);
+    margin-top: -300px;
+    padding: 25rem;
+    background-color: var(--colorGrisPrincipal-);
+  }
+  
+.titlepage {
+    color: var(--colorAzulPrincipal-);
+    justify-content: center;
+    padding-bottom: 90px;
+    padding-top: 10px;
+    display:flex;
+    font-size: 1rem
+}
+  
+  
+  .contactus {
+    border: inherit;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    color: #f9fcfd;
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: #00aeef solid 1px;
+  }
+  
+  .send_btn {
+    font-size: 17px;
+    transition: ease-in all 0.5s;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: #00aeef solid 3px;
+    color: #f9fcfd;
+    padding: 8px 0px;
+    margin: 0 auto;
+    max-width: 180px;
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+    margin-top: 30px;
+  }
+  
+ .send_btn:hover {
+    background-color: #00aeef;
+    transition: ease-in all 0.5s;
+    color: #fff;
+  }
+  
+  #request *::placeholder {
+    color: #f9fcfd;
+    opacity: 1;
+  }
+  
+  
+  /** end contact section **/
+  
+  
